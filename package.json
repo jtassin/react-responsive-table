@@ -13,7 +13,7 @@
     "builddemo": "webpack --progress -p --config webpack.config.example.js",
     "publishdemo": "gh-pages -d dist/examples",
     "bump-patch": "npm test && npm version patch && npm run build && npm publish && git push && git push --tags && npm run builddemo && npm run publishdemo",
-    "start": "webpack-dev-server -d --colors --inline --hot --port 3006 --host 0.0.0.0"
+    "start": "webpack-dev-server -d --colors --inline --hot --port 3006 --host 0.0.0.0 --config webpack.config.example.js"
   },
   "repository": {
     "type": "git",
