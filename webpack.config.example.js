@@ -19,7 +19,7 @@ module.exports = {
         ]
     },
     output: {
-        path: 'dist',
+        path: 'dist/examples',
         filename: 'index.js'
     },
     plugins: [new HtmlWebpackPlugin(
@@ -29,7 +29,7 @@ module.exports = {
         }
     )],
     devServer: {
-        // Permet d'envoyer les 404 sur index
+        // Send 404 to index
         historyApiFallback: true
     },
 };
