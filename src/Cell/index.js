@@ -12,7 +12,7 @@ class Cell extends Component {
         cell: {
             flexGrow: 1,
             overflow: 'hidden',
-            verticalAlign: top,
+            verticalAlign: 'top',
             whiteSpace: 'nowrap',
             textOverflow: 'ellipsis',
             height: '48px',
