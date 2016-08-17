@@ -1,29 +1,29 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import { Cell } from '../../index.js';
+import { Row } from '../../index.js';
 
-describe('Cell', () => {
+describe('Row', () => {
 
-    it('build a div representing a cell', () => {
+    it('build a div representing a row', () => {
         let wrapper = shallow(
-            <Cell/>
+            <Row/>
         );
-        expect(wrapper.html()).to.equal('<div style="flex-grow:1;overflow:hidden;vertical-align:top;white-space:nowrap;text-overflow:ellipsis;height:48px;padding:12px 18px 12px 24px;box-sizing:border-box;"></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);"></div>');
     });
 
     it('merge styles passed as argument to component style', () => {
         let wrapper = shallow(
-            <Cell style={{ color: 'red' }}/>
+            <Row style={{ color: 'red' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="flex-grow:1;overflow:hidden;vertical-align:top;white-space:nowrap;text-overflow:ellipsis;height:48px;padding:12px 18px 12px 24px;box-sizing:border-box;color:red;"></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);color:red;"></div>');
     });
 
-    it('render inside the cell the children', () => {
+    it('render inside the row the children', () => {
         let wrapper = shallow(
-            <Cell><span>Content</span></Cell>
+            <Row><span>Content</span></Row>
         );
-        expect(wrapper.html()).to.equal('<div style="flex-grow:1;overflow:hidden;vertical-align:top;white-space:nowrap;text-overflow:ellipsis;height:48px;padding:12px 18px 12px 24px;box-sizing:border-box;"><span>Content</span></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);"><span>Content</span></div>');
     });
 
 });

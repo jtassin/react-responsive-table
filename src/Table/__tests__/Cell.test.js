@@ -1,29 +1,29 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import { Row } from '../../index.js';
+import { Table } from '../../index.js';
 
-describe('Row', () => {
+describe('Table', () => {
 
-    it('build a div representing a row', () => {
+    it('build a div representing a table', () => {
         let wrapper = shallow(
-            <Row/>
+            <Table/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);"></div>');
+        expect(wrapper.html()).to.equal('<div></div>');
     });
 
     it('merge styles passed as argument to component style', () => {
         let wrapper = shallow(
-            <Row style={{ color: 'red' }}/>
+            <Table style={{ color: 'red' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);color:red;"></div>');
+        expect(wrapper.html()).to.equal('<div style="color:red;"></div>');
     });
 
-    it('render inside the row the children', () => {
+    it('render inside the table the children', () => {
         let wrapper = shallow(
-            <Row><span>Content</span></Row>
+            <Table><span>Content</span></Table>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);"><span>Content</span></div>');
+        expect(wrapper.html()).to.equal('<div><span>Content</span></div>');
     });
 
 });
