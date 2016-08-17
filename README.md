@@ -1,4 +1,5 @@
 # react-responsive-table
+[![npm version](https://badge.fury.io/js/react-responsive-table.svg)](https://badge.fury.io/js/react-responsive-table) 
 [![Build Status](https://travis-ci.org/jtassin/react-responsive-table.svg?branch=master)](https://travis-ci.org/jtassin/react-responsive-table)
 [![codecov](https://codecov.io/gh/jtassin/react-responsive-table/branch/master/graph/badge.svg)](https://codecov.io/gh/jtassin/react-responsive-table)
 [![Code Climate](https://codeclimate.com/github/jtassin/react-responsive-table/badges/gpa.svg)](https://codeclimate.com/github/jtassin/react-responsive-table)
