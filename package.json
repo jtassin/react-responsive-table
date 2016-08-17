@@ -1,6 +1,6 @@
 {
   "name": "react-responsive-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component for building really responsive table",
   "main": "dist/index.js",
   "scripts": {
