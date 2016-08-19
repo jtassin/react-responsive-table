@@ -7,6 +7,7 @@ class Cell extends Component {
     minWidthPx: PropTypes.number,
     style: PropTypes.object,
     children: PropTypes.object,
+    thead: PropTypes.bool,
   };
 
   static styles = {
@@ -16,11 +17,15 @@ class Cell extends Component {
       verticalAlign: 'top',
       whiteSpace: 'nowrap',
       textOverflow: 'ellipsis',
-      height: '48px',
+      minHeight: '48px',
       padding: '12px 18px 12px 24px',
       boxSizing: 'border-box',
+      fontSize: '13px',
     },
-
+    thead: {
+      fontWeight: 700,
+      fontSize: '12px',
+    },
   }
 
   constructor(props) {
@@ -29,7 +34,11 @@ class Cell extends Component {
   }
 
   render() {
-    const cellStyle = Object.assign({}, Cell.styles.cell, this.props.style);
+    let cellStyle = Object.assign({}, Cell.styles.cell);
+    if (this.props.thead) {
+      cellStyle = Object.assign({}, cellStyle, Cell.styles.thead);
+    }
+    cellStyle = Object.assign({}, cellStyle, this.props.style);
     if (this.props.minWidthPx) {
       cellStyle.width = `${this.props.minWidthPx}px`;
     }
