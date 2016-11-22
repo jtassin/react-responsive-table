@@ -1,13 +1,12 @@
-import React, { PropTypes, Component } from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import React, { PropTypes, PureComponent } from 'react';
 
-class Table extends Component {
+class Table extends PureComponent {
 
   static styles = {
     table: {
       width: '100%',
     },
-    mdlTable: {
+    materialTable: {
       /* eslint-disable max-len */
       boxShadow: '0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)',
       border: '1px solid rgba(0,0,0,.12)',
@@ -20,20 +19,15 @@ class Table extends Component {
   }
 
   static propTypes = {
-    mdl: PropTypes.bool,
+    material: PropTypes.bool,
     style: PropTypes.object,
     children: PropTypes.elem,
   };
 
-  constructor(props) {
-    super(props);
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-  }
-
   render() {
     const tableStyle = Object.assign({}, Table.styles.table, this.props.style);
-    if (this.props.mdl) {
-      Object.assign(tableStyle, Table.styles.mdlTable);
+    if (this.props.material) {
+      Object.assign(tableStyle, Table.styles.materialTable);
     }
     return <div style={tableStyle}>{this.props.children}</div>;
   }

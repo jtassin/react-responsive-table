@@ -1,5 +1,4 @@
-* {
-    box-sizing: border-box; }
+
 
 body {
     padding: 0;
@@ -7,7 +6,8 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #606c71; }
+    color: #606c71;
+}
 
 a {
     color: #1e6bb8;
@@ -18,6 +18,7 @@ a:hover {
 .btn {
     display: inline-block;
     margin-bottom: 1rem;
+    padding: 20px;
     color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.2);
@@ -34,24 +35,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3); }
 
-@media screen and (min-width: 64em) {
-    .btn {
-        padding: 0.75rem 1rem; } }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .btn {
-        padding: 0.6rem 0.9rem;
-        font-size: 0.9rem; } }
-
-@media screen and (max-width: 42em) {
-    .btn {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        font-size: 0.9rem; }
-    .btn + .btn {
-        margin-top: 1rem;
-        margin-left: 0; } }
 
 .page-header {
     color: #fff;
@@ -115,55 +99,8 @@ a:hover {
     color: #159957; }
 .main-content p {
     margin-bottom: 1em; }
-.main-content code {
-    padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
-    color: #383e41;
-    background-color: #f3f6fa;
-    border-radius: 0.3rem; }
-.main-content pre {
-    padding: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: #567482;
-    word-wrap: normal;
-    background-color: #f3f6fa;
-    border: solid 1px #dce6f0;
-    border-radius: 0.3rem; }
-.main-content pre > code {
-    padding: 0;
-    margin: 0;
-    font-size: 0.9rem;
-    color: #567482;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0; }
 .main-content .highlight {
     margin-bottom: 1rem; }
-.main-content .highlight pre {
-    margin-bottom: 0;
-    word-break: normal; }
-.main-content .highlight pre, .main-content pre {
-    padding: 0.8rem;
-    overflow: auto;
-    font-size: 0.9rem;
-    line-height: 1.45;
-    border-radius: 0.3rem; }
-.main-content pre code, .main-content pre tt {
-    display: inline;
-    max-width: initial;
-    padding: 0;
-    margin: 0;
-    overflow: initial;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0; }
-.main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
-    content: normal; }
 .main-content ul, .main-content ol {
     margin-top: 0; }
 .main-content blockquote {
@@ -263,5 +200,4 @@ a:hover {
     border: solid 1px #F9F9F9;
     margin: 10px;
     padding: 15px;
-    text-align: center;
 }
