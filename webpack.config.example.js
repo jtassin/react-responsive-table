@@ -1,35 +1,39 @@
+var path = require('path');
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-var path = require("path");
+const DEBUG = !process.argv.includes('--release');
+
+const entries = ['./examples/src/example'];
+if (DEBUG) {
+    entries.unshift('react-hot-loader/patch');
+    entries.unshift('webpack-dev-server/client?http://localhost:3000');
+    entries.unshift('webpack/hot/only-dev-server');
+}
+
 module.exports = {
-    entry: "./examples/index.js",
+    devtool: 'eval',
+    entry: entries,
+    output: {
+        path: path.join(__dirname, 'dist/examples'),
+        filename: '[name].js',
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx'],
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({template: 'examples/src/index.html'}),
+        new ExtractTextPlugin("[name].css")
+    ],
     module: {
         loaders: [
-            {test: /\.css$/, loaders: ['style', 'css']},
-            {test: /\.scss$/, loaders: ["style", "css", "sass"]},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {
-                test: /.jsx?$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'stage-0', 'react'],
-                }
-            },
-            {test: /\.(png|woff|woff2|eot|ttf|svg|swf|jpg|jpeg|gif)$/, loader: 'url-loader?limit=100000'},
-        ]
-    },
-    output: {
-        path: 'dist/examples',
-        filename: 'index.js'
-    },
-    plugins: [new HtmlWebpackPlugin(
-        {
-            template: 'examples/index.html',
-            title: "React responsive table examples"
-        }
-    )],
-    devServer: {
-        // Send 404 to index
-        historyApiFallback: true
-    },
+                test: /\.jsx?$/,
+                loaders: ['babel'],
+                exclude: /(node_modules)/
+            }]
+    }
 };
