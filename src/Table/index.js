@@ -18,18 +18,28 @@ class Table extends PureComponent {
     },
   }
 
+  static contextTypes: {
+    muiTheme: React.PropTypes.object.isRequired
+    };
+
   static propTypes = {
     material: PropTypes.bool,
     style: PropTypes.object,
-    children: PropTypes.elem,
   };
 
   render() {
+    console.log(this.context);
+    const children = [];
+    let index = 0;
+    this.props.children.forEach((child) => {
+      children.push(React.cloneElement(child, { index }));
+      index += 1;
+    });
     const tableStyle = Object.assign({}, Table.styles.table, this.props.style);
     if (this.props.material) {
       Object.assign(tableStyle, Table.styles.materialTable);
     }
-    return <div style={tableStyle}>{this.props.children}</div>;
+    return <div style={tableStyle}>{children}</div>;
   }
 }
 

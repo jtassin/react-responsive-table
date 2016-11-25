@@ -1,5 +1,4 @@
 import React, { PropTypes, PureComponent } from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 class Row extends PureComponent {
 
@@ -9,6 +8,21 @@ class Row extends PureComponent {
     striped: PropTypes.bool,
     index: PropTypes.number.isRequired,
   };
+
+  static contextTypes: {
+    muiTheme: React.PropTypes.object.isRequired
+  };
+
+
+  render() {
+    let tableRow = {};
+    console.log(this.context);
+    if (this.context.muiTheme) {
+      tableRow = this.context.muiTheme.tableRow;
+    }
+    const rowStyle = Object.assign({}, Row.styles.row, tableRow, this.props.style);
+    return <div style={rowStyle}>{this.props.children}</div>;
+  }
 
   static styles = {
     row: {
@@ -21,12 +35,6 @@ class Row extends PureComponent {
       borderBottom: '1px solid rgba(0,0,0,.12)',
     },
 
-  }
-
-  render() {
-    const {tableRow} = this.context.muiTheme;
-    const rowStyle = Object.assign({}, Row.styles.row, this.props.style);
-    return <div style={rowStyle}>{this.props.children}</div>;
   }
 }
 

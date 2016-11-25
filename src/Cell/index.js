@@ -1,12 +1,11 @@
 import React, { PropTypes, Component } from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 class Cell extends Component {
 
   static propTypes = {
     minWidthPx: PropTypes.number,
     style: PropTypes.object,
-    children: PropTypes.object,
+    children: PropTypes.elem,
     thead: PropTypes.bool,
   };
 
@@ -26,11 +25,6 @@ class Cell extends Component {
       fontWeight: 700,
       fontSize: '12px',
     },
-  }
-
-  constructor(props) {
-    super(props);
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
 
   render() {
