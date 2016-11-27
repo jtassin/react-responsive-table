@@ -36,7 +36,7 @@ describe('Cell', () => {
     });
     
     describe('material', () => {
-      it('does not take header boolean into account in material is false', () => {
+      it('does not take header boolean into account if material is false', () => {
         let wrapper = shallow(
           <Cell header={true}/>
         );

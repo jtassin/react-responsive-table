@@ -32,7 +32,7 @@ Row.getStyles = (props, context) => {
     flexGrow: 0,
     width: '100%',
   };
-  if (props.material) {
+  if (props.material && context.muiTheme) {
     const { tableRow, tableHeader } = context.muiTheme;
     style = Object.assign(style, {
       borderBottom: props.displayBorder && `1px solid ${tableRow.borderColor}`,
