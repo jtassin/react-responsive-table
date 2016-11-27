@@ -2,18 +2,20 @@
   "name": "react-responsive-table",
   "version": "1.0.6",
   "description": "A react component for building really responsive table",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "coverage": "nyc npm test && nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.js\" --reporter=text-lcov > coverage.lcov  && codecov",
-    "test": "mocha \"src/**/*.test.js\" --compilers js:babel-register",
-    "eslint": "eslint src",
-    "lint": "npm run eslint",
-    "build": "webpack --progress -p --config webpack.config.dist.js",
-    "clean": "rm -rf dist/*",
-    "builddemo": "webpack --progress -p --config webpack.config.example.js",
-    "publishdemo": "gh-pages -d dist/examples",
-    "bump-patch": "npm test && npm version patch && npm run build && npm publish && git push && git push --tags && npm run builddemo && npm run publishdemo",
-    "start": "webpack-dev-server -d --colors --inline --hot --port 3006 --host 0.0.0.0 --config webpack.config.example.js"
+    "coverage": "nyc npm test && nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.jsx\" --reporter=text-lcov > coverage.lcov  && codecov",
+    "build": "webpack -p --config webpack.dist.config.js && babel src --out-dir lib --ignore spec.js,test.jsx,test.js",
+    "build:ghpages": "webpack -p --config webpack.example.config.js --release",
+    "lint": "eslint --ext .jsx,js ./src ./examples/src",
+    "lint:fix": "eslint  --ext .jsx,js ./src ./examples/src --fix",
+    "bump:patch": "npm test && npm version patch && npm run publish:site && npm run publish:demo",
+    "bump:minor": "npm test && npm version minor && npm run publish:site && npm run publish:demo",
+    "bump:major": "npm test && npm version major && npm run publish:site && npm run publish:demo",
+    "publish:site": "npm run build && npm publish && git push && git push --tags",
+    "publish:demo": "npm run build:ghpages && gh-pages -d dist/examples",
+    "start": "node server.js",
+    "test": "mocha \"src/**/*.test.jsx\" --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
       "**/*.test.js",
       "node_modules"
     ]
+  },
+  "browserify-shim": {
+    "react": "global:React"
   },
   "keywords": [
     "table",
@@ -39,34 +44,44 @@
   },
   "homepage": "https://github.com/jtassin/react-responsive-table#readme",
   "devDependencies": {
-    "babel-cli": "^6.11.4",
+    "babel-core": "^6.18.2",
     "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
-    "css-loader": "^0.23.1",
-    "enzyme": "^2.4.1",
-    "eslint": "^3.2.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-loader": "^1.5.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^5.2.2",
+    "component-playground": "^1.3.1",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
-    "html-webpack-plugin": "^2.22.0",
-    "mocha": "^3.0.0",
-    "nyc": "^7.1.0",
-    "react-addons-test-utils": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "html-webpack-plugin": "^2.24.1",
+    "material-ui": "^0.16.4",
+    "mocha": "^3.1.0",
+    "nyc": "^8.3.0",
+    "raw-loader": "^0.5.1",
+    "react": "^15.4.0",
+    "react-addons-test-utils": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-tap-event-plugin": "^1.0.0",
+    "sinon": "^1.17.6",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "peerDependencies": {
+    "react": "^15.4.0"
   },
   "dependencies": {
-    "react": "^15.3.0",
-    "react-addons-pure-render-mixin": "^15.3.0"
+    "react-style-proptype": "^1.4.0"
   }
 }
