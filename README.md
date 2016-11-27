@@ -21,7 +21,7 @@ Once installed, just require and use the components:
 import React from `react`;
 import { Table, Row, Cell } from 'react-responsive-table';
 
-React.render(<Table mdl>
+React.render(<Table>
                      <Row>
                          <Cell thead minWidthPx={100}>Head-1-1</Cell>
                          <Cell thead minWidthPx={100}>Head-1-2</Cell>
