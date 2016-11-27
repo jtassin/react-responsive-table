@@ -33,12 +33,12 @@ var config = {
             }
         ]
     },
-    resolve: {
-        root: path.resolve('./src'),
-        extensions: ['', '.js']
-    },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
     externals: {
-        react: 'react'
+        react: 'react',
+        'react-style-proptype': 'react-style-proptype'
     },
     plugins: plugins
 };
