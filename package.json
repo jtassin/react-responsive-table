@@ -7,8 +7,8 @@
     "coverage": "nyc npm test && nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.jsx\" --reporter=text-lcov > coverage.lcov  && codecov",
     "build": "webpack -p --config webpack.dist.config.js && babel src --out-dir lib --ignore spec.js,test.jsx,test.js",
     "build:ghpages": "webpack -p --config webpack.example.config.js --release",
-    "lint": "eslint --ext .jsx ./src ./examples/src",
-    "lint:fix": "eslint  --ext .jsx ./src ./examples/src --fix",
+    "lint": "eslint --ext .jsx,js ./src ./examples/src",
+    "lint:fix": "eslint  --ext .jsx,js ./src ./examples/src --fix",
     "bump:patch": "npm test && npm version patch && npm run publish:site && npm run publish:demo",
     "bump:minor": "npm test && npm version minor && npm run publish:site && npm run publish:demo",
     "bump:major": "npm test && npm version major && npm run publish:site && npm run publish:demo",
@@ -79,5 +79,8 @@
   },
   "peerDependencies": {
     "react": "^15.4.0"
+  },
+  "dependencies": {
+    "react-style-proptype": "^1.4.0"
   }
 }

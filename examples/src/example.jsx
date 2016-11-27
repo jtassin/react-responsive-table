@@ -14,9 +14,9 @@ require('./stylesheet.css');
 /* eslint-disable no-undef */
 const materialExampleEl = document.getElementById('material-example');
 ReactDOM.render(
-    <AppContainer>
-      <MaterialExample />
-    </AppContainer>,
+  <AppContainer>
+    <MaterialExample />
+  </AppContainer>,
     materialExampleEl,
 );
 
@@ -25,9 +25,9 @@ if (module.hot) {
     // If you use Webpack 2 in ES modules mode, you can
     // use <App /> here rather than require() a <NextApp />.
     ReactDOM.render(
-        <AppContainer>
-          <RequiredMaterialExample />
-        </AppContainer>,
+      <AppContainer>
+        <RequiredMaterialExample />
+      </AppContainer>,
         materialExampleEl,
     );
   });
@@ -36,9 +36,9 @@ if (module.hot) {
 /* eslint-disable no-undef */
 const basicExampleEl = document.getElementById('basic-example');
 ReactDOM.render(
-    <AppContainer>
-      <BasicExample />
-    </AppContainer>,
+  <AppContainer>
+    <BasicExample />
+  </AppContainer>,
     basicExampleEl,
 );
 
@@ -47,9 +47,9 @@ if (module.hot) {
     // If you use Webpack 2 in ES modules mode, you can
     // use <App /> here rather than require() a <NextApp />.
     ReactDOM.render(
-        <AppContainer>
-          <RequiredBasicExample />
-        </AppContainer>,
+      <AppContainer>
+        <RequiredBasicExample />
+      </AppContainer>,
         basicExampleEl,
     );
   });
