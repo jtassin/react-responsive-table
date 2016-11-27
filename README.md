@@ -6,13 +6,23 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/57b4cdc22236f4002b96697b/badge.png)](https://www.versioneye.com/user/projects/57b4cdc22236f4002b96697b)
 
 
-A react component for building really responsive table
+A react component for building really responsive table.
+The built tables can be used for form (hell yeah!) and can wrap to multiples lines on small devices.
 
 Inspiration : https://hashnode.com/post/really-responsive-tables-using-css3-flexbox-cijzbxd8n00pwvm53sl4l42cx
 
 ## Installation
+
+### With webpack
 ```sh
 npm i react-responsive-table --save
+```
+
+### With UMD
+
+You will need also react (of course) and [react-style-proptype](https://github.com/brigand/react-style-proptype) (used to validate the style properties).
+```sh
+npm i react, react-style-proptype, react-responsive-table --save
 ```
 
 ## Usage
@@ -41,6 +51,29 @@ React.render(<Table>
                  </Table>, document.querySelector('#main'));
 ```
 
+### Properties
+
+#### Table
+| Props        | Options           | Default  | Description |
+| ------------- |-------------| -----| -------- |
+| material | Boolean | false | if true, it apply [material-ui](https://github.com/callemall/material-ui) styles to the table|
+
+#### Row
+| Props        | Options           | Default  | Description |
+| ------------- |-------------| -----| -------- |
+| striped | Boolean | false | if true, it strip the color of the row acording to the pair/impair index|
+
+#### Cell
+| Props        | Options           | Default  | Description |
+| ------------- |-------------| -----| -------- |
+| header | Boolean | false | if true, it apply a table header style to this cell|
+| minWidthPx | Number | null | The minimum with in px of the Cell|
+
+## Material design
+
+This lib is designed to integrate with [material-ui](https://github.com/callemall/material-ui). 
+It uses natively the selected theme for every supported functionalities.
+
 ## Build
 ```sh
 npm run build
@@ -51,6 +84,12 @@ npm run build
 ```sh
 npm test
 ```
+
+## Development (`src`, `lib` and the build process)
+
+**NOTE:** The source code for the component is in `src`. A transpiled CommonJS version (generated with Babel) is available in `lib` for use with node.js, browserify and webpack. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
+
+To build, watch and serve the examples (which will also watch the component source), run `npm start`. 
 
 ## Examples
 
