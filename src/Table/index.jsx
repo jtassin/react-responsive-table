@@ -33,7 +33,10 @@ Table.contextTypes = {
 Table.propTypes = {
   material: PropTypes.bool,
   style: stylePropType,
-  children: PropTypes.oneOf(PropTypes.arrayOf(PropTypes.elem), PropTypes.elem),
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node,
+  ]),
 };
 
 Table.getStyles = (props, context) => {

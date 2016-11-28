@@ -13,7 +13,10 @@ const Cell = (props, context) => {
 Cell.propTypes = {
   minWidthPx: PropTypes.number,
   style: stylePropType,
-  children: PropTypes.elem,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node,
+  ]),
   header: PropTypes.bool,
   material: PropTypes.bool,
 };

@@ -13,11 +13,14 @@ const Row = (props, context) => {
 /* eslint-disable react/no-unused-prop-types */
 Row.propTypes = {
   style: stylePropType,
-  children: PropTypes.oneOf(PropTypes.arrayOf(PropTypes.elem), PropTypes.elem),
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.node),
+    React.PropTypes.node,
+  ]),
   striped: PropTypes.bool,
   header: PropTypes.bool,
   material: PropTypes.bool,
-  index: PropTypes.number.isRequired,
+  index: PropTypes.number,
 };
 
 Row.contextTypes = {
@@ -41,7 +44,7 @@ Row.getStyles = (props, context) => {
     if (props.header) {
       style.borderBottom = `1px solid ${tableHeader.borderColor}`;
     }
-    if (props.striped && (props.index % 2 === 0)) {
+    if (props.striped && props.index && (props.index % 2 === 0)) {
       style.backgroundColor = context.muiTheme.tableRow.stripeColor;
     }
     style.minHeight = context.muiTheme.tableRow.height;
