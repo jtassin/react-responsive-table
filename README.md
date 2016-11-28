@@ -62,12 +62,15 @@ React.render(<Table>
 | Props        | Options           | Default  | Description |
 | ------------- |-------------| -----| -------- |
 | striped | Boolean | false | if true, it strip the color of the row acording to the pair/impair index|
+| index | Number | null | The row index (used by the striped fonctionality). It is supposed to be set automatically by the Table parent but, with redux-connect or other middle component you may have to set it manually. |
+| material | Boolean | false | if true, it apply [material-ui](https://github.com/callemall/material-ui) styles to the table. It is supposed to be set automatically by the Table parent but, with redux-connect or other middle component you may have to set it manually. |
 
 #### Cell
 | Props        | Options           | Default  | Description |
 | ------------- |-------------| -----| -------- |
 | header | Boolean | false | if true, it apply a table header style to this cell|
 | minWidthPx | Number | null | The minimum with in px of the Cell|
+| material | Boolean | false | if true, it apply [material-ui](https://github.com/callemall/material-ui) styles to the table. It is supposed to be set automatically by the Table parent but, with redux-connect or other middle component you may have to set it manually. |
 
 ## Material design
 
