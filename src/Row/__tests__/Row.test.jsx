@@ -5,20 +5,28 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { shallow } from 'enzyme';
 import { Row } from '../../index.js';
 
+function rowWrapper({ index }) {
+  return shallow(
+    Row({ material: true, striped: true, index }, { muiTheme: getMuiTheme(lightBaseTheme) })
+  );
+}
+
+const DEFAULT_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>';
+
 describe('Row', () => {
 
     it('build a div representing a row', () => {
-        let wrapper = shallow(
-            <Row/>
-        );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>');
+      let wrapper = shallow(
+          <Row/>
+      );
+      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
     });
 
     it('merge styles passed as argument to component style', () => {
         let wrapper = shallow(
             <Row style={{ color: 'red' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:red;"></div>');
     });
 
     it('render inside the row the children', () => {
@@ -33,14 +41,14 @@ describe('Row', () => {
       let wrapper = shallow(
         <Row striped={true}/>
       );
-      expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>');
+      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
     });
 
     it('does not fail if context.muiTheme is missing', () => {
       let wrapper = shallow(
         <Row material={true}/>
       );
-      expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>');
+      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
     });
 
     it('use the material ui theme', () => {
@@ -51,16 +59,12 @@ describe('Row', () => {
     });
     
     it('add correct style if index is pair and striped is true', () => {
-      let wrapper = shallow(
-        Row({material: true, striped: true, index: 2}, { muiTheme: getMuiTheme(lightBaseTheme) })
-      );
+      let wrapper = rowWrapper({index: 2});
       expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);background-color:rgba(127, 221, 233, 0.4);min-height:48px;"></div>');
     });
 
     it('add correct style if index is impair and striped is true', () => {
-      let wrapper = shallow(
-        Row({material: true, striped: true, index: 3}, { muiTheme: getMuiTheme(lightBaseTheme) })
-      );
+      let wrapper = rowWrapper({index: 3});
       expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);min-height:48px;"></div>');
     });
   });

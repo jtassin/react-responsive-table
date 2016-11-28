@@ -46,6 +46,7 @@ Row.getStyles = (props, context) => {
     }
     style.minHeight = context.muiTheme.tableRow.height;
   }
+  style = Object.assign(style, props.style);
   return style;
 };
 
