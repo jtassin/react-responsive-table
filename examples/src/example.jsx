@@ -20,19 +20,6 @@ ReactDOM.render(
     materialExampleEl,
 );
 
-if (module.hot) {
-  module.hot.accept('./MaterialExample', () => {
-    // If you use Webpack 2 in ES modules mode, you can
-    // use <App /> here rather than require() a <NextApp />.
-    ReactDOM.render(
-      <AppContainer>
-        <RequiredMaterialExample />
-      </AppContainer>,
-        materialExampleEl,
-    );
-  });
-}
-
 /* eslint-disable no-undef */
 const basicExampleEl = document.getElementById('basic-example');
 ReactDOM.render(
@@ -43,14 +30,18 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept('./BasicExample', () => {
-    // If you use Webpack 2 in ES modules mode, you can
-    // use <App /> here rather than require() a <NextApp />.
-    ReactDOM.render(
-      <AppContainer>
-        <RequiredBasicExample />
-      </AppContainer>,
-        basicExampleEl,
-    );
+  const examples = [
+    { name: MaterialExample, node: <RequiredMaterialExample />, elem: materialExampleEl },
+    { name: BasicExample, node: <RequiredBasicExample />, elem: basicExampleEl },
+  ];
+  examples.forEach((example) => {
+    module.hot.accept(`./${example.name}`, () => {
+      ReactDOM.render(
+        <AppContainer>
+          {example.node}
+        </AppContainer>,
+        example.elem,
+      );
+    });
   });
 }
