@@ -11,6 +11,8 @@ global.navigator = { userAgent: 'all' };
 
 describe('Cell', () => {
 
+  const DEFAULT_CELL_RESULT = '<div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;"></div></div>';
+
   // following lines serve to detect bad proptype or any react warning
 
   /* eslint-disable no-undef, no-console */
@@ -24,7 +26,7 @@ describe('Cell', () => {
         let wrapper = shallow(
             <Cell/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;"></div></div>');
+        expect(wrapper.html()).to.equal(DEFAULT_CELL_RESULT);
     });
   
   it('use minWidthPx property', () => {
@@ -53,14 +55,14 @@ describe('Cell', () => {
         let wrapper = shallow(
           <Cell header={true}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;"></div></div>');
+        expect(wrapper.html()).to.equal(DEFAULT_CELL_RESULT);
       });
 
       it('does not fail if context.muiTheme is missing', () => {
         let wrapper = shallow(
           <Cell material={true}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;"></div></div>');
+        expect(wrapper.html()).to.equal(DEFAULT_CELL_RESULT);
       });
 
       it('use the material ui theme', () => {
