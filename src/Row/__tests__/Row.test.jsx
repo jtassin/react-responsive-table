@@ -44,9 +44,9 @@ describe('Row', () => {
 
     it('render inside the row the children', () => {
         const wrapper = shallow(
-            <Row><span>Row Content</span></Row>
+            <Row><p>Row Content</p></Row>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><span>Row Content</span></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><p>Row Content</p></div>');
     });
   
   describe('material', () => {

@@ -36,9 +36,9 @@ describe('Table', () => {
 
     it('render inside the table the children', () => {
         let wrapper = shallow(
-            <Table><span>Table Content</span></Table>
+            <Table><div>Table Content</div></Table>
         );
-        expect(wrapper.html()).to.equal('<div style="width:100%;"><span>Table Content</span></div>');
+        expect(wrapper.html()).to.equal('<div style="width:100%;"><div>Table Content</div></div>');
     });
   
   describe('material', () => {
