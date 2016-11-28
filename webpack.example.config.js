@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const DEBUG = !process.argv.includes('--release');
+const DEBUG = !process.argv.indexOf('--release') > -1;
 
 const entries = ['./examples/src/example'];
 if (DEBUG) {
