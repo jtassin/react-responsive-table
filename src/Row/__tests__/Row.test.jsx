@@ -37,16 +37,16 @@ describe('Row', () => {
 
     it('merge styles passed as argument to component style', () => {
         const wrapper = shallow(
-            <Row style={{ color: 'red' }}/>
+            <Row style={{ backgroundColor: 'green' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:red;"></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;background-color:green;"></div>');
     });
 
     it('render inside the row the children', () => {
         const wrapper = shallow(
-            <Row><span>Content</span></Row>
+            <Row><span>Row Content</span></Row>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><span>Content</span></div>');
+        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><span>Row Content</span></div>');
     });
   
   describe('material', () => {

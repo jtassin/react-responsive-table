@@ -29,16 +29,16 @@ describe('Table', () => {
 
     it('merge styles passed as argument to component style', () => {
         let wrapper = shallow(
-            <Table style={{ color: 'red' }}/>
+            <Table style={{ color: 'blue' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="width:100%;color:red;"></div>');
+        expect(wrapper.html()).to.equal('<div style="width:100%;color:blue;"></div>');
     });
 
     it('render inside the table the children', () => {
         let wrapper = shallow(
-            <Table><span>Content</span></Table>
+            <Table><span>Table Content</span></Table>
         );
-        expect(wrapper.html()).to.equal('<div style="width:100%;"><span>Content</span></div>');
+        expect(wrapper.html()).to.equal('<div style="width:100%;"><span>Table Content</span></div>');
     });
   
   describe('material', () => {
