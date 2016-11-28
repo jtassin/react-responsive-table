@@ -35,7 +35,8 @@
     "responsive",
     "react",
     "component",
-    "flexbox"
+    "flexbox",
+    "form"
   ],
   "author": "Julien TASSIN",
   "license": "MIT",
