@@ -1,11 +1,12 @@
 import React from 'react';
+import TextField from 'material-ui/TextField';
+import FlatButton from 'material-ui/FlatButton';
 import Playground from 'component-playground';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { Table, Row, Cell } from '../../src/index';
-import TextField from 'material-ui/TextField';
-import FlatButton from 'material-ui/FlatButton';
+
 
 export default function render() {
   return (

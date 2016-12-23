@@ -44,7 +44,7 @@ Row.getStyles = (props, context) => {
     if (props.header) {
       style.borderBottom = `1px solid ${tableHeader.borderColor}`;
     }
-    if (props.striped && props.index && (props.index % 2 === 0)) {
+    if (props.striped && (props.index || props.index === 0) && (props.index % 2 === 0)) {
       style.backgroundColor = context.muiTheme.tableRow.stripeColor;
     }
     style.minHeight = context.muiTheme.tableRow.height;

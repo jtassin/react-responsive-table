@@ -52,6 +52,8 @@ describe('Row', () => {
   describe('material', () => {
 
     const MATERIAL_UNSTRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);min-height:48px;"></div>';
+
+    const MATERIAL_STRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);background-color:rgba(127, 221, 233, 0.4);min-height:48px;"></div>';
     
     it('does not take striped boolean into account if material is false', () => {
       const wrapper = shallow(
@@ -71,10 +73,15 @@ describe('Row', () => {
       const wrapper = rowWrapper({material: true});
       expect(wrapper.html()).to.equal(MATERIAL_UNSTRIPED_ROW_RESULT);
     });
+
+    it('considers 0 index as pair', () => {
+      const wrapper = rowWrapper({material: true, index: 0});
+      expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
+    });
     
     it('add correct style if index is pair and striped is true', () => {
       const wrapper = rowWrapper({index: 2});
-      expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);background-color:rgba(127, 221, 233, 0.4);min-height:48px;"></div>');
+      expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
     });
 
     it('add correct style if index is impair and striped is true', () => {
