@@ -4,7 +4,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import { Table } from '../../index.js';
+import { Table, Row, Cell } from '../../index.js';
 
 // Used by material-ui
 global.navigator = { userAgent: 'all' };
@@ -20,6 +20,18 @@ describe('Table', () => {
   /* eslint-disable no-undef */
   after(() => { console.error.restore(); });
 
+    it('does not fail if children is a mix of array and object', () => {
+      const rows = [2, 3].map(index => (<Row key={index}><Cell>{index}</Cell></Row>));
+      let wrapper = shallow(
+        <Table>
+          <Row key={1}><Cell>1</Cell></Row>
+          {rows}
+          <Row key={4}><Cell>4</Cell></Row>
+        </Table>
+      );
+      expect(wrapper.html()).to.equal('<div style="width:100%;"><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">1</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">2</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">3</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">4</div></div></div></div>');
+    });
+  
     it('build a div representing a table', () => {
         let wrapper = shallow(
             <Table/>

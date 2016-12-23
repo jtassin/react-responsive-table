@@ -3,21 +3,28 @@ import stylePropType from 'react-style-proptype';
 
 const Table = (props, context) => {
   const { material } = props;
-  const children = [];
-  let index = 0;
-  if (props.children) {
-    if (Array.isArray(props.children)) {
-      props.children.forEach((child) => {
-        children.push(React.cloneElement(child, { index, material }));
-        index += 1;
-      });
-    } else {
-      children.push(props.children);
-    }
-  }
+  const children = Table.buildChildren(props.children, 0, material);
   return <div style={Table.getStyles(props, context)}>{children}</div>;
 };
 
+Table.buildChildren = (children, index, material) => {
+  const result = [];
+  if (children) {
+    if (Array.isArray(children)) {
+      children.forEach((child) => {
+        result.push(Table.buildChildren(child, index, material));
+        index += 1;
+      });
+    } else {
+      if (children.type === Table) {
+        result.push(React.cloneElement(children, { index, material }));
+      } else {
+        result.push(children);
+      }
+    }
+  }
+  return result;
+};
 
 Table.styles = {
   table: {
