@@ -54,6 +54,15 @@ describe('Table', () => {
     });
   
   describe('material', () => {
+    it('handle striped even with complex children', () => {
+      const rows = [2, 3].map(index => (<Row material striped key={index}><Cell>{index}</Cell></Row>));
+      const children = [<Row material striped key={1}><Cell>1</Cell></Row>, rows, <Row material striped key={4}><Cell>4</Cell></Row>];
+      let wrapper = shallow(
+        Table({material: true, children }, { muiTheme: getMuiTheme(lightBaseTheme) })
+      );
+      expect(wrapper.html()).to.equal('<div style="width:100%;background-color:#ffffff;padding:0 24px;border-collapse:collapse;border-spacing:0;table-layout:fixed;font-family:Roboto, sans-serif;"><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">1</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">2</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">3</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">4</div></div></div></div>');
+    });
+    
     it('add material-ui styles according to the theme if material is true', () => {
       let wrapper = shallow(
         Table({material: true}, { muiTheme: getMuiTheme(lightBaseTheme) })
