@@ -27,6 +27,15 @@ Row.contextTypes = {
   muiTheme: React.PropTypes.object,
 };
 
+Row.defaultProps = {
+  material: false,
+  style: {},
+  children: null,
+  striped: false,
+  header: false,
+  index: null,
+};
+
 Row.getStyles = (props, context) => {
   let style = {
     display: 'flex',
