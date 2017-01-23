@@ -64,8 +64,8 @@ module.exports = {
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: '[name].[chunkhash:8].js',
-    chunkFilename: '[name].[chunkhash:8].chunk.js',
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath
   },
@@ -122,7 +122,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: '[name].[hash:8].[ext]'
+          name: '[name].[ext]'
         }
       },
       // Process JS with Babel.
@@ -160,7 +160,7 @@ module.exports = {
         test: /\.svg$/,
         loader: 'file',
         query: {
-          name: '[name].[hash:8].[ext]'
+          name: '[name].[ext]'
         }
       }
     ]
