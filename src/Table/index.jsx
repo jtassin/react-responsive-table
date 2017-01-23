@@ -51,6 +51,12 @@ Table.propTypes = {
   ]),
 };
 
+Table.defaultProps = {
+  material: false,
+  style: {},
+  children: null,
+};
+
 Table.getStyles = (props, context) => {
   let tableStyle = Object.assign({}, Table.styles.table);
   if (props.material && context.muiTheme) {

@@ -25,6 +25,15 @@ Cell.contextTypes = {
   muiTheme: PropTypes.object,
 };
 
+Cell.defaultProps = {
+  material: false,
+  style: {},
+  children: null,
+  header: false,
+  minWidthPx: null,
+};
+
+
 Cell.getStyles = (props, context) => {
   let style = {
     display: 'flex',

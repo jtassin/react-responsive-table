@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+/* eslint-disable import/no-extraneous-dependencies */
 import { AppContainer } from 'react-hot-loader';
 import BasicExample from './BasicExample';
 import FormExample from './FormExample';
@@ -19,7 +20,7 @@ ReactDOM.render(
   <AppContainer>
     <MaterialExample />
   </AppContainer>,
-    materialExampleEl,
+  materialExampleEl,
 );
 
 /* eslint-disable no-undef */
@@ -37,7 +38,7 @@ ReactDOM.render(
   <AppContainer>
     <BasicExample />
   </AppContainer>,
-    basicExampleEl,
+  basicExampleEl,
 );
 
 if (module.hot) {
