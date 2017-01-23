@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/jtassin/react-responsive-table/issues"
   },
-  "homepage": "https://github.com/jtassin/react-responsive-table#readme",
+  "homepage": "https://jtassin.github.io/react-responsive-table/",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "^6.18.2",
