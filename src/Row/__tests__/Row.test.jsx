@@ -4,7 +4,7 @@ import sinon from 'sinon';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { shallow } from 'enzyme';
-import { Row } from '../../index.js';
+import { Row, Cell } from '../../index.js';
 
 // Used by material-ui
 global.navigator = { userAgent: 'all' };
@@ -28,6 +28,26 @@ describe('Row', () => {
     /* eslint-disable no-undef */
     after(() => { console.error.restore(); });
 
+    it('accept an array of Cells built in JS', () => {
+      const entries = [1, 2, 3];
+      const cells = entries.map((entry) => (<Cell key={entry}>{entry}</Cell>));
+      const wrapper = shallow(
+        <Row>
+          {cells}
+        </Row>
+      );
+      
+      const expectedWrapper = shallow(
+        <Row>
+          <Cell key={1}>1</Cell>
+          <Cell key={2}>2</Cell>
+          <Cell key={3}>3</Cell>
+        </Row>
+      );
+      
+      expect(wrapper.html()).to.equal(expectedWrapper.html());
+    });
+  
     it('build a div representing a row', () => {
       const wrapper = shallow(
           <Row/>
@@ -90,3 +110,4 @@ describe('Row', () => {
     });
   });
 });
+
