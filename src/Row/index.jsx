@@ -4,8 +4,8 @@ import stylePropType from 'react-style-proptype';
 const Row = (props, context) => {
   const { material, header } = props;
   let children = props.children;
-  if (Array.isArray(props.children)) {
-    children = Array.prototype.concat.apply([], props.children);
+  if (Array.isArray(children)) {
+    children = Array.prototype.concat.apply([], children);
     children = children.map(child => (React.cloneElement(child, { material, header })));
   }
   return <div style={Row.getStyles(props, context)}>{children}</div>;
