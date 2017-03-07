@@ -5,7 +5,8 @@ const Row = (props, context) => {
   const { material, header } = props;
   let children = props.children;
   if (Array.isArray(props.children)) {
-    children = props.children.map(child => (React.cloneElement(child, { material, header })));
+    children = Array.prototype.concat.apply([], props.children);
+    children = children.map(child => (React.cloneElement(child, { material, header })));
   }
   return <div style={Row.getStyles(props, context)}>{children}</div>;
 };
