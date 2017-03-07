@@ -28,6 +28,30 @@ describe('Row', () => {
     /* eslint-disable no-undef */
     after(() => { console.error.restore(); });
 
+  it('accept mixe of array of Cells and inline Cells built in JS', () => {
+    const entries = [1, 2, 3];
+    const cells = entries.map((entry) => (<Cell key={entry}>{entry}</Cell>));
+    const wrapper = shallow(
+      <Row>
+        <Cell key={0}>0</Cell>
+        {cells}
+        <Cell key={4}>4</Cell>
+      </Row>
+    );
+
+    const expectedWrapper = shallow(
+      <Row>
+        <Cell key={0}>0</Cell>
+        <Cell key={1}>1</Cell>
+        <Cell key={2}>2</Cell>
+        <Cell key={3}>3</Cell>
+        <Cell key={4}>4</Cell>
+      </Row>
+    );
+
+    expect(wrapper.html()).to.equal(expectedWrapper.html());
+  });
+  
     it('accept an array of Cells built in JS', () => {
       const entries = [1, 2, 3];
       const cells = entries.map((entry) => (<Cell key={entry}>{entry}</Cell>));
