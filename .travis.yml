@@ -1,10 +1,4 @@
 language: node_js
-addons:
-  sonarqube:
-    organization: "jtassin-github" # the key of the org you chose at step #3
-script:
-  # other script steps might be done before running the actual SonarQube analysis
-  - sonar-scanner
 node_js:
   - "6"
 after_success: npm run coverage
