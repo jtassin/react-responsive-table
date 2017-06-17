@@ -27,7 +27,7 @@ npm i react, react-style-proptype, react-responsive-table --save
 
 ## Usage
 Once installed, just require and use the components:
-```javascript
+```jsx
 import React from `react`;
 import { Table, Row, Cell } from 'react-responsive-table';
 
