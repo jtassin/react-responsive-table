@@ -17,10 +17,10 @@ describe('Cell', () => {
 
   /* eslint-disable no-undef, no-console */
   before(() => {
-    sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
+    // sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
   });
   /* eslint-disable no-undef */
-  after(() => { console.error.restore(); });
+  // after(() => { console.error.restore(); });
 
     it('build a div representing a cell', () => {
         let wrapper = shallow(
@@ -28,7 +28,7 @@ describe('Cell', () => {
         );
         expect(wrapper.html()).to.equal(DEFAULT_CELL_RESULT);
     });
-  
+
   it('use minWidthPx property', () => {
     let wrapper = shallow(
       <Cell minWidthPx={100}/>
@@ -49,7 +49,7 @@ describe('Cell', () => {
         );
       expect(wrapper.html()).to.equal('<div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;"><span>Content</span></div></div>');
     });
-    
+
     describe('material', () => {
       it('does not take header boolean into account if material is false', () => {
         let wrapper = shallow(

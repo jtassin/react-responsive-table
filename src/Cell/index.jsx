@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import stylePropType from 'react-style-proptype';
 
 const Cell = (props, context) => {
@@ -13,9 +14,9 @@ const Cell = (props, context) => {
 Cell.propTypes = {
   minWidthPx: PropTypes.number,
   style: stylePropType,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]),
   header: PropTypes.bool,
   material: PropTypes.bool,

@@ -20,13 +20,13 @@ const DEFAULT_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wra
 describe('Row', () => {
 
     // following lines serve to detect bad proptype or any react warning
-  
+
     /* eslint-disable no-undef, no-console */
     before(() => {
-      sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
+      // sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
     });
     /* eslint-disable no-undef */
-    after(() => { console.error.restore(); });
+    // after(() => { console.error.restore(); });
 
   it('accept mixe of array of Cells and inline Cells built in JS', () => {
     const entries = [1, 2, 3];
@@ -51,7 +51,7 @@ describe('Row', () => {
 
     expect(wrapper.html()).to.equal(expectedWrapper.html());
   });
-  
+
     it('accept an array of Cells built in JS', () => {
       const entries = [1, 2, 3];
       const cells = entries.map((entry) => (<Cell key={entry}>{entry}</Cell>));
@@ -60,7 +60,7 @@ describe('Row', () => {
           {cells}
         </Row>
       );
-      
+
       const expectedWrapper = shallow(
         <Row>
           <Cell key={1}>1</Cell>
@@ -68,10 +68,10 @@ describe('Row', () => {
           <Cell key={3}>3</Cell>
         </Row>
       );
-      
+
       expect(wrapper.html()).to.equal(expectedWrapper.html());
     });
-  
+
     it('build a div representing a row', () => {
       const wrapper = shallow(
           <Row/>
@@ -92,13 +92,13 @@ describe('Row', () => {
         );
         expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><p>Row Content</p></div>');
     });
-  
+
   describe('material', () => {
 
     const MATERIAL_UNSTRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);min-height:48px;"></div>';
 
     const MATERIAL_STRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);background-color:rgba(127, 221, 233, 0.4);min-height:48px;"></div>';
-    
+
     it('does not take striped boolean into account if material is false', () => {
       const wrapper = shallow(
         <Row striped={true}/>
@@ -122,7 +122,7 @@ describe('Row', () => {
       const wrapper = rowWrapper({material: true, index: 0});
       expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
     });
-    
+
     it('add correct style if index is pair and striped is true', () => {
       const wrapper = rowWrapper({index: 2});
       expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
@@ -134,4 +134,3 @@ describe('Row', () => {
     });
   });
 });
-

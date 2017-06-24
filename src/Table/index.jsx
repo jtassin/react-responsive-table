@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import stylePropType from 'react-style-proptype';
 import Row from '../Row';
 
@@ -38,16 +39,16 @@ Table.styles = {
 };
 
 Table.contextTypes = {
-  muiTheme: React.PropTypes.object,
+  muiTheme: PropTypes.object,
 };
 
 /* eslint-disable react/no-unused-prop-types */
 Table.propTypes = {
   material: PropTypes.bool,
   style: stylePropType,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]),
 };
 

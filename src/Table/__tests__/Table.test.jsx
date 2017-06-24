@@ -15,10 +15,10 @@ describe('Table', () => {
 
   /* eslint-disable no-undef, no-console */
   before(() => {
-    sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
+    // sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
   });
   /* eslint-disable no-undef */
-  after(() => { console.error.restore(); });
+  // after(() => { console.error.restore(); });
 
     it('does not fail if children is a mix of array and object', () => {
       const rows = [2, 3].map(index => (<Row key={index}><Cell>{index}</Cell></Row>));
@@ -31,7 +31,7 @@ describe('Table', () => {
       );
       expect(wrapper.html()).to.equal('<div style="width:100%;"><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">1</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">2</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">3</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">4</div></div></div></div>');
     });
-  
+
     it('build a div representing a table', () => {
         let wrapper = shallow(
             <Table/>
@@ -52,7 +52,7 @@ describe('Table', () => {
         );
         expect(wrapper.html()).to.equal('<div style="width:100%;"><div>Table Content</div></div>');
     });
-  
+
   describe('material', () => {
     it('handle striped even with complex children', () => {
       const rows = [2, 3].map(index => (<Row material striped key={index}><Cell>{index}</Cell></Row>));
@@ -62,7 +62,7 @@ describe('Table', () => {
       );
       expect(wrapper.html()).to.equal('<div style="width:100%;background-color:#ffffff;padding:0 24px;border-collapse:collapse;border-spacing:0;table-layout:fixed;font-family:Roboto, sans-serif;"><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">1</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">2</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">3</div></div></div><div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><div style="display:flex;flex-grow:1;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;"><div style="margin:auto;">4</div></div></div></div>');
     });
-    
+
     it('add material-ui styles according to the theme if material is true', () => {
       let wrapper = shallow(
         Table({material: true}, { muiTheme: getMuiTheme(lightBaseTheme) })

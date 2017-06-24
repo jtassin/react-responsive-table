@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import stylePropType from 'react-style-proptype';
 
 const Row = (props, context) => {
@@ -14,9 +15,9 @@ const Row = (props, context) => {
 /* eslint-disable react/no-unused-prop-types */
 Row.propTypes = {
   style: stylePropType,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]),
   striped: PropTypes.bool,
   header: PropTypes.bool,
@@ -25,7 +26,7 @@ Row.propTypes = {
 };
 
 Row.contextTypes = {
-  muiTheme: React.PropTypes.object,
+  muiTheme: PropTypes.object,
 };
 
 Row.defaultProps = {
