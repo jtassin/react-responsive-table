@@ -15,8 +15,7 @@
     "publish:site": "npm run build && npm publish && git push && git push --tags",
     "publish:demo": "npm run build:ghpages && gh-pages -d dist/examples",
     "start": "node scripts/start.js",
-    "jest": "jest",
-    "test": "mocha \"src/**/*.test.jsx\" --compilers js:babel-register"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
