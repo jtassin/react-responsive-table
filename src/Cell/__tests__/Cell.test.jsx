@@ -16,11 +16,11 @@ describe('Cell', () => {
   // following lines serve to detect bad proptype or any react warning
 
   /* eslint-disable no-undef, no-console */
-  before(() => {
-    // sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
+  beforeEach(() => {
+    sinon.stub(console, 'error', (warning) => { throw new Error(warning); });
   });
   /* eslint-disable no-undef */
-  // after(() => { console.error.restore(); });
+  afterEach(() => { console.error.restore(); });
 
     it('build a div representing a cell', () => {
         let wrapper = shallow(
