@@ -1,0 +1,1162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell build a div representing a cell 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "material": false,
+          "minWidthPx": null,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={false}
+    material={false}
+    minWidthPx={null}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Cell material add correct style if header is true 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "color": "#9e9e9e",
+            "display": "flex",
+            "flexGrow": 1,
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "minHeight": 48,
+            "overflow": "hidden",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "position": "relative",
+            "textAlign": "left",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "color": "#9e9e9e",
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "minHeight": 48,
+                  "overflow": "hidden",
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "position": "relative",
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "color": "#9e9e9e",
+            "display": "flex",
+            "flexGrow": 1,
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "minHeight": 48,
+            "overflow": "hidden",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "position": "relative",
+            "textAlign": "left",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+}
+`;
+
+exports[`Cell material does not fail if context.muiTheme is missing 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={false}
+        material={true}
+        minWidthPx={null}
+        style={Object {}}
+/>,
+      "_debugID": 11,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "material": true,
+          "minWidthPx": null,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 6,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+        "_debugID": 12,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={false}
+    material={true}
+    minWidthPx={null}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Cell material does not take header boolean into account if material is false 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={true}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+/>,
+      "_debugID": 9,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": true,
+          "material": false,
+          "minWidthPx": null,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 5,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+        "_debugID": 10,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={true}
+    material={false}
+    minWidthPx={null}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Cell material use the material ui theme 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "fontSize": 13,
+            "minHeight": 48,
+            "overflow": "hidden",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "textAlign": "left",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "fontSize": 13,
+                  "minHeight": 48,
+                  "overflow": "hidden",
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "textAlign": "left",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "fontSize": 13,
+            "minHeight": 48,
+            "overflow": "hidden",
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "textAlign": "left",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+}
+`;
+
+exports[`Cell merge styles passed as argument to component style 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "color": "red",
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "color": "red",
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={
+                Object {
+                        "color": "red",
+                      }
+        }
+/>,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "material": false,
+          "minWidthPx": null,
+          "style": Object {
+            "color": "red",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "color": "red",
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "color": "red",
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={false}
+    material={false}
+    minWidthPx={null}
+    style={
+        Object {
+            "color": "red",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Cell render inside the cell the children 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    >
+        <span>
+            Content
+        </span>
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      >
+            <span>
+                  Content
+            </span>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+>
+        <span>
+                Content
+        </span>
+</Cell>,
+      "_debugID": 7,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": <span>
+            Content
+</span>,
+          "header": false,
+          "material": false,
+          "minWidthPx": null,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 4,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          >
+                    <span>
+                              Content
+                    </span>
+          </div>
+</div>,
+        "_debugID": 8,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          >
+                    <span>
+                              Content
+                    </span>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={false}
+    material={false}
+    minWidthPx={null}
+    style={Object {}}
+>
+    <span>
+        Content
+    </span>
+</Cell>,
+}
+`;
+
+exports[`Cell use minWidthPx property 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexGrow": 1,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "verticalAlign": "middle",
+            "width": "100px",
+          }
+    }
+>
+    <div
+        style={
+            Object {
+                "margin": "auto",
+              }
+        }
+    />
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexGrow": 1,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "verticalAlign": "middle",
+                  "width": "100px",
+                }
+      }
+>
+      <div
+            style={
+                  Object {
+                        "margin": "auto",
+                      }
+            }
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Cell
+        header={false}
+        material={false}
+        minWidthPx={100}
+        style={Object {}}
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "material": false,
+          "minWidthPx": 100,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                              "width": "100px",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexGrow": 1,
+                              "overflow": "hidden",
+                              "textOverflow": "ellipsis",
+                              "verticalAlign": "middle",
+                              "width": "100px",
+                            }
+          }
+>
+          <div
+                    style={
+                              Object {
+                                        "margin": "auto",
+                                      }
+                    }
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Cell
+    header={false}
+    material={false}
+    minWidthPx={100}
+    style={Object {}}
+/>,
+}
+`;
