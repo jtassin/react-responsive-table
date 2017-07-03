@@ -850,7 +850,7 @@ ShallowWrapper {
   "node": <div
     style={
         Object {
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -865,7 +865,7 @@ ShallowWrapper {
     <div
       style={
             Object {
-                  "borderBottom": undefined,
+                  "borderBottom": "1px solid #e0e0e0",
                   "color": "rgba(0, 0, 0, 0.87)",
                   "display": "flex",
                   "flexDirection": "row",
@@ -887,7 +887,7 @@ ShallowWrapper {
   "unrendered": <div
     style={
         Object {
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -913,7 +913,7 @@ ShallowWrapper {
     style={
         Object {
             "backgroundColor": "rgba(127, 221, 233, 0.4)",
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -929,7 +929,7 @@ ShallowWrapper {
       style={
             Object {
                   "backgroundColor": "rgba(127, 221, 233, 0.4)",
-                  "borderBottom": undefined,
+                  "borderBottom": "1px solid #e0e0e0",
                   "color": "rgba(0, 0, 0, 0.87)",
                   "display": "flex",
                   "flexDirection": "row",
@@ -952,7 +952,7 @@ ShallowWrapper {
     style={
         Object {
             "backgroundColor": "rgba(127, 221, 233, 0.4)",
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -1040,7 +1040,7 @@ ShallowWrapper {
     style={
         Object {
             "backgroundColor": "rgba(127, 221, 233, 0.4)",
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -1056,7 +1056,7 @@ ShallowWrapper {
       style={
             Object {
                   "backgroundColor": "rgba(127, 221, 233, 0.4)",
-                  "borderBottom": undefined,
+                  "borderBottom": "1px solid #e0e0e0",
                   "color": "rgba(0, 0, 0, 0.87)",
                   "display": "flex",
                   "flexDirection": "row",
@@ -1079,7 +1079,7 @@ ShallowWrapper {
     style={
         Object {
             "backgroundColor": "rgba(127, 221, 233, 0.4)",
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -1354,7 +1354,7 @@ ShallowWrapper {
   "node": <div
     style={
         Object {
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
@@ -1369,7 +1369,7 @@ ShallowWrapper {
     <div
       style={
             Object {
-                  "borderBottom": undefined,
+                  "borderBottom": "1px solid #e0e0e0",
                   "color": "rgba(0, 0, 0, 0.87)",
                   "display": "flex",
                   "flexDirection": "row",
@@ -1391,7 +1391,7 @@ ShallowWrapper {
   "unrendered": <div
     style={
         Object {
-            "borderBottom": undefined,
+            "borderBottom": "1px solid #e0e0e0",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "flex",
             "flexDirection": "row",
