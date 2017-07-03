@@ -966,6 +966,68 @@ ShallowWrapper {
 }
 `;
 
+exports[`Row material add header style if header props is true 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "borderBottom": "1px solid #e0e0e0",
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "borderBottom": "1px solid #e0e0e0",
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "minHeight": 48,
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "borderBottom": "1px solid #e0e0e0",
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+}
+`;
+
 exports[`Row material considers 0 index as pair 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {

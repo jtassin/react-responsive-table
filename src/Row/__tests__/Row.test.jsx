@@ -9,9 +9,9 @@ import renderer from 'react-test-renderer';
 // Used by material-ui
 global.navigator = { userAgent: 'all' };
 
-function rowWrapper({ index, material = true, striped= true }) {
+function rowWrapper({ index, material = true, striped = true, header = undefined }) {
   return shallow(
-    Row({ material, striped, index }, { muiTheme: getMuiTheme(lightBaseTheme) })
+    Row({ material, striped, index, header }, { muiTheme: getMuiTheme(lightBaseTheme) })
   );
 }
 
@@ -93,10 +93,6 @@ describe('Row', () => {
 
   describe('material', () => {
 
-    const MATERIAL_UNSTRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);min-height:48px;"></div>';
-
-    const MATERIAL_STRIPED_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;color:rgba(0, 0, 0, 0.87);background-color:rgba(127, 221, 233, 0.4);min-height:48px;"></div>';
-
     it('does not take striped boolean into account if material is false', () => {
       const wrapper = shallow(
         <Row striped={true}/>
@@ -128,6 +124,11 @@ describe('Row', () => {
 
     it('add correct style if index is impair and striped is true', () => {
       const wrapper = rowWrapper({index: 3});
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('add header style if header props is true', () => {
+      const wrapper = rowWrapper({header: true});
       expect(wrapper).toMatchSnapshot();
     });
   });
