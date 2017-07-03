@@ -33,11 +33,11 @@ export default function render() {
       <Cell minWidthPx={200} key="cell3">Col-3-3</Cell>
     </Row>
   </Table>
-</MuiThemeProvider>`} scope={{ React, Table, Row, Cell, MuiThemeProvider, lightBaseTheme, getMuiTheme }}
+</MuiThemeProvider>`}
+          scope={{ React, Table, Row, Cell, MuiThemeProvider, lightBaseTheme, getMuiTheme }}
         />
       </div>
       <span style={{ marginTop: '20px' }}>Change your window size to see the trick.</span>
     </div>
   );
 }
-

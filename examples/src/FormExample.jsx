@@ -30,10 +30,20 @@ export default function render() {
       </Row>
     </form>
   </Table>
-</MuiThemeProvider>`} scope={{ React, Table, Row, Cell, MuiThemeProvider, lightBaseTheme, getMuiTheme, TextField, FlatButton }}
+</MuiThemeProvider>`}
+          scope={{
+            React,
+            Table,
+            Row,
+            Cell,
+            MuiThemeProvider,
+            lightBaseTheme,
+            getMuiTheme,
+            TextField,
+            FlatButton,
+          }}
         />
       </div>
     </div>
   );
 }
-

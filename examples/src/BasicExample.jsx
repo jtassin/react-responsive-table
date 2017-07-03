@@ -28,11 +28,11 @@ export default function render() {
           <Cell minWidthPx={100}>Col-3-2</Cell>
           <Cell minWidthPx={300}>Col-3-3</Cell>
         </Row>
-      </Table>`} scope={{ React, Table, Row, Cell }}
+      </Table>`}
+          scope={{ React, Table, Row, Cell }}
         />
       </div>
       <span style={{ marginTop: '20px' }}>Change your window size to see the trick.</span>
     </div>
   );
 }
-
