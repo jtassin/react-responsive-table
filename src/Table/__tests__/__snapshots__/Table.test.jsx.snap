@@ -1,0 +1,1343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table build a div representing a table 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Table
+        material={false}
+        style={Object {}}
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "material": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Table
+    material={false}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Table does not fail if children is a mix of array and object 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "width": "100%",
+          }
+    }
+>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            1
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            2
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            3
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            4
+        </Cell>
+    </Row>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "width": "100%",
+                }
+      }
+>
+      <Row
+            header={false}
+            index={null}
+            material={false}
+            striped={false}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  1
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={null}
+            material={false}
+            striped={false}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  2
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={null}
+            material={false}
+            striped={false}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  3
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={null}
+            material={false}
+            striped={false}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  4
+            </Cell>
+      </Row>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Table
+        material={false}
+        style={Object {}}
+>
+        <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+        >
+                <Cell
+                        header={false}
+                        material={false}
+                        minWidthPx={null}
+                        style={Object {}}
+                >
+                        1
+                </Cell>
+        </Row>
+        <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+        >
+                <Cell
+                        header={false}
+                        material={false}
+                        minWidthPx={null}
+                        style={Object {}}
+                >
+                        2
+                </Cell>
+        </Row>
+        <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+        >
+                <Cell
+                        header={false}
+                        material={false}
+                        minWidthPx={null}
+                        style={Object {}}
+                >
+                        3
+                </Cell>
+        </Row>
+        <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+        >
+                <Cell
+                        header={false}
+                        material={false}
+                        minWidthPx={null}
+                        style={Object {}}
+                >
+                        4
+                </Cell>
+        </Row>
+</Table>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": Array [
+            <Row
+              header={false}
+              index={null}
+              material={false}
+              striped={false}
+              style={Object {}}
+>
+              <Cell
+                            header={false}
+                            material={false}
+                            minWidthPx={null}
+                            style={Object {}}
+              >
+                            1
+              </Cell>
+</Row>,
+            Array [
+              <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+>
+                <Cell
+                                header={false}
+                                material={false}
+                                minWidthPx={null}
+                                style={Object {}}
+                >
+                                2
+                </Cell>
+</Row>,
+              <Row
+                header={false}
+                index={null}
+                material={false}
+                striped={false}
+                style={Object {}}
+>
+                <Cell
+                                header={false}
+                                material={false}
+                                minWidthPx={null}
+                                style={Object {}}
+                >
+                                3
+                </Cell>
+</Row>,
+            ],
+            <Row
+              header={false}
+              index={null}
+              material={false}
+              striped={false}
+              style={Object {}}
+>
+              <Cell
+                            header={false}
+                            material={false}
+                            minWidthPx={null}
+                            style={Object {}}
+              >
+                            4
+              </Cell>
+</Row>,
+          ],
+          "material": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              1
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              2
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              3
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              4
+                    </Cell>
+          </Row>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              1
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              2
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              3
+                    </Cell>
+          </Row>
+          <Row
+                    header={false}
+                    index={null}
+                    material={false}
+                    striped={false}
+                    style={Object {}}
+          >
+                    <Cell
+                              header={false}
+                              material={false}
+                              minWidthPx={null}
+                              style={Object {}}
+                    >
+                              4
+                    </Cell>
+          </Row>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Table
+    material={false}
+    style={Object {}}
+>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            1
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            2
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            3
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            4
+        </Cell>
+    </Row>
+</Table>,
+}
+`;
+
+exports[`Table material add material-ui styles according to the theme if material is true 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "backgroundColor": "#ffffff",
+            "borderCollapse": "collapse",
+            "borderSpacing": 0,
+            "fontFamily": "Roboto, sans-serif",
+            "padding": "0 24px",
+            "tableLayout": "fixed",
+            "width": "100%",
+          }
+    }
+>
+    
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "backgroundColor": "#ffffff",
+                  "borderCollapse": "collapse",
+                  "borderSpacing": 0,
+                  "fontFamily": "Roboto, sans-serif",
+                  "padding": "0 24px",
+                  "tableLayout": "fixed",
+                  "width": "100%",
+                }
+      }
+>
+      
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "backgroundColor": "#ffffff",
+            "borderCollapse": "collapse",
+            "borderSpacing": 0,
+            "fontFamily": "Roboto, sans-serif",
+            "padding": "0 24px",
+            "tableLayout": "fixed",
+            "width": "100%",
+          }
+    }
+>
+    
+</div>,
+}
+`;
+
+exports[`Table material does not fail if context.muiTheme is missing 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "width": "100%",
+          }
+    }
+>
+    <span>
+        Content
+    </span>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "width": "100%",
+                }
+      }
+>
+      <span>
+            Content
+      </span>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Table
+        material={true}
+        style={Object {}}
+>
+        <span>
+                Content
+        </span>
+</Table>,
+      "_debugID": 9,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": <span>
+            Content
+</span>,
+          "material": true,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 5,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <span>
+                    Content
+          </span>
+</div>,
+        "_debugID": 10,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <span>
+                    Content
+          </span>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Table
+    material={true}
+    style={Object {}}
+>
+    <span>
+        Content
+    </span>
+</Table>,
+}
+`;
+
+exports[`Table material handle striped even with complex children 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "backgroundColor": "#ffffff",
+            "borderCollapse": "collapse",
+            "borderSpacing": 0,
+            "fontFamily": "Roboto, sans-serif",
+            "padding": "0 24px",
+            "tableLayout": "fixed",
+            "width": "100%",
+          }
+    }
+>
+    <Row
+        header={false}
+        index={0}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            1
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={1}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            2
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={2}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            3
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={3}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            4
+        </Cell>
+    </Row>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "backgroundColor": "#ffffff",
+                  "borderCollapse": "collapse",
+                  "borderSpacing": 0,
+                  "fontFamily": "Roboto, sans-serif",
+                  "padding": "0 24px",
+                  "tableLayout": "fixed",
+                  "width": "100%",
+                }
+      }
+>
+      <Row
+            header={false}
+            index={0}
+            material={true}
+            striped={true}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  1
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={1}
+            material={true}
+            striped={true}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  2
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={2}
+            material={true}
+            striped={true}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  3
+            </Cell>
+      </Row>
+      <Row
+            header={false}
+            index={3}
+            material={true}
+            striped={true}
+            style={Object {}}
+      >
+            <Cell
+                  header={false}
+                  material={false}
+                  minWidthPx={null}
+                  style={Object {}}
+            >
+                  4
+            </Cell>
+      </Row>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "backgroundColor": "#ffffff",
+            "borderCollapse": "collapse",
+            "borderSpacing": 0,
+            "fontFamily": "Roboto, sans-serif",
+            "padding": "0 24px",
+            "tableLayout": "fixed",
+            "width": "100%",
+          }
+    }
+>
+    <Row
+        header={false}
+        index={0}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            1
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={1}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            2
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={2}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            3
+        </Cell>
+    </Row>
+    <Row
+        header={false}
+        index={3}
+        material={true}
+        striped={true}
+        style={Object {}}
+    >
+        <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+        >
+            4
+        </Cell>
+    </Row>
+</div>,
+}
+`;
+
+exports[`Table merge styles passed as argument to component style 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "color": "blue",
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "color": "blue",
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Table
+        material={false}
+        style={
+                Object {
+                        "color": "blue",
+                      }
+        }
+/>,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "material": false,
+          "style": Object {
+            "color": "blue",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "color": "blue",
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "color": "blue",
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Table
+    material={false}
+    style={
+        Object {
+            "color": "blue",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Table render inside the table the children 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "width": "100%",
+          }
+    }
+>
+    <div>
+        Table Content
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "width": "100%",
+                }
+      }
+>
+      <div>
+            Table Content
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Table
+        material={false}
+        style={Object {}}
+>
+        <div>
+                Table Content
+        </div>
+</Table>,
+      "_debugID": 7,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": <div>
+            Table Content
+</div>,
+          "material": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 4,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <div>
+                    Table Content
+          </div>
+</div>,
+        "_debugID": 8,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "width": "100%",
+                            }
+          }
+>
+          <div>
+                    Table Content
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Table
+    material={false}
+    style={Object {}}
+>
+    <div>
+        Table Content
+    </div>
+</Table>,
+}
+`;

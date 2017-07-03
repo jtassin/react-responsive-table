@@ -1,0 +1,1634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row accept an array of Cells built in JS 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        1
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        2
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        3
+    </Cell>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            1
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            2
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            3
+      </Cell>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                1
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                2
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                3
+        </Cell>
+</Row>,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": Array [
+            <Cell
+              header={false}
+              material={false}
+              minWidthPx={null}
+              style={Object {}}
+>
+              1
+</Cell>,
+            <Cell
+              header={false}
+              material={false}
+              minWidthPx={null}
+              style={Object {}}
+>
+              2
+</Cell>,
+            <Cell
+              header={false}
+              material={false}
+              minWidthPx={null}
+              style={Object {}}
+>
+              3
+</Cell>,
+          ],
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    1
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    2
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    3
+          </Cell>
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    1
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    2
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    3
+          </Cell>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={false}
+    style={Object {}}
+>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        1
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        2
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        3
+    </Cell>
+</Row>,
+}
+`;
+
+exports[`Row accept mixe of array of Cells and inline Cells built in JS 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        0
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        1
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        2
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        3
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        4
+    </Cell>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            0
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            1
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            2
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            3
+      </Cell>
+      <Cell
+            header={false}
+            material={false}
+            minWidthPx={null}
+            style={Object {}}
+      >
+            4
+      </Cell>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                0
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                1
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                2
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                3
+        </Cell>
+        <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+        >
+                4
+        </Cell>
+</Row>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": Array [
+            <Cell
+              header={false}
+              material={false}
+              minWidthPx={null}
+              style={Object {}}
+>
+              0
+</Cell>,
+            Array [
+              <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+>
+                1
+</Cell>,
+              <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+>
+                2
+</Cell>,
+              <Cell
+                header={false}
+                material={false}
+                minWidthPx={null}
+                style={Object {}}
+>
+                3
+</Cell>,
+            ],
+            <Cell
+              header={false}
+              material={false}
+              minWidthPx={null}
+              style={Object {}}
+>
+              4
+</Cell>,
+          ],
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    0
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    1
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    2
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    3
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    4
+          </Cell>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    0
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    1
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    2
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    3
+          </Cell>
+          <Cell
+                    header={false}
+                    material={false}
+                    minWidthPx={null}
+                    style={Object {}}
+          >
+                    4
+          </Cell>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={false}
+    style={Object {}}
+>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        0
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        1
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        2
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        3
+    </Cell>
+    <Cell
+        header={false}
+        material={false}
+        minWidthPx={null}
+        style={Object {}}
+    >
+        4
+    </Cell>
+</Row>,
+}
+`;
+
+exports[`Row build a div representing a row 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+/>,
+      "_debugID": 9,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 5,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 10,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={false}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Row material add correct style if index is impair and striped is true 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "borderBottom": undefined,
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "minHeight": 48,
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Row material add correct style if index is pair and striped is true 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "backgroundColor": "rgba(127, 221, 233, 0.4)",
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "backgroundColor": "rgba(127, 221, 233, 0.4)",
+                  "borderBottom": undefined,
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "minHeight": 48,
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "backgroundColor": "rgba(127, 221, 233, 0.4)",
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Row material considers 0 index as pair 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "backgroundColor": "rgba(127, 221, 233, 0.4)",
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "backgroundColor": "rgba(127, 221, 233, 0.4)",
+                  "borderBottom": undefined,
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "minHeight": 48,
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "backgroundColor": "rgba(127, 221, 233, 0.4)",
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Row material does not fail if context.muiTheme is missing 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={true}
+        striped={false}
+        style={Object {}}
+/>,
+      "_debugID": 17,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "index": null,
+          "material": true,
+          "striped": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 9,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 18,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={true}
+    striped={false}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Row material does not take striped boolean into account if material is false 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={true}
+        style={Object {}}
+/>,
+      "_debugID": 15,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": true,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 8,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 16,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={true}
+    style={Object {}}
+/>,
+}
+`;
+
+exports[`Row material use the material ui theme 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "borderBottom": undefined,
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "minHeight": 48,
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": null,
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <div
+    style={
+        Object {
+            "borderBottom": undefined,
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "minHeight": 48,
+            "width": "100%",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Row merge styles passed as argument to component style 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "backgroundColor": "green",
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+/>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "backgroundColor": "green",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={
+                Object {
+                        "backgroundColor": "green",
+                      }
+        }
+/>,
+      "_debugID": 11,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": null,
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": false,
+          "style": Object {
+            "backgroundColor": "green",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 6,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "backgroundColor": "green",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+        "_debugID": 12,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "backgroundColor": "green",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+/>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={false}
+    style={
+        Object {
+            "backgroundColor": "green",
+          }
+    }
+/>,
+}
+`;
+
+exports[`Row render inside the row the children 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexGrow": 0,
+            "flexWrap": "wrap",
+            "width": "100%",
+          }
+    }
+>
+    <p>
+        Row Content
+    </p>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "flexWrap": "wrap",
+                  "width": "100%",
+                }
+      }
+>
+      <p>
+            Row Content
+      </p>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Row
+        header={false}
+        index={null}
+        material={false}
+        striped={false}
+        style={Object {}}
+>
+        <p>
+                Row Content
+        </p>
+</Row>,
+      "_debugID": 13,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {
+          "muiTheme": undefined,
+        },
+        "props": Object {
+          "children": <p>
+            Row Content
+</p>,
+          "header": false,
+          "index": null,
+          "material": false,
+          "striped": false,
+          "style": Object {},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 7,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <p>
+                    Row Content
+          </p>
+</div>,
+        "_debugID": 14,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexGrow": 0,
+                              "flexWrap": "wrap",
+                              "width": "100%",
+                            }
+          }
+>
+          <p>
+                    Row Content
+          </p>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Row
+    header={false}
+    index={null}
+    material={false}
+    striped={false}
+    style={Object {}}
+>
+    <p>
+        Row Content
+    </p>
+</Row>,
+}
+`;

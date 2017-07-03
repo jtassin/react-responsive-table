@@ -1,5 +1,4 @@
 import React from 'react';
-import { expect } from 'chai';
 import sinon from 'sinon';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -15,8 +14,6 @@ function rowWrapper({ index, material = true, striped= true }) {
     Row({ material, striped, index }, { muiTheme: getMuiTheme(lightBaseTheme) })
   );
 }
-
-const DEFAULT_ROW_RESULT = '<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"></div>';
 
 describe('Row', () => {
 
@@ -50,7 +47,7 @@ describe('Row', () => {
       </Row>
     );
 
-    expect(wrapper.html()).to.equal(expectedWrapper.html());
+    expect(wrapper).toMatchSnapshot();
   });
 
     it('accept an array of Cells built in JS', () => {
@@ -70,28 +67,28 @@ describe('Row', () => {
         </Row>
       );
 
-      expect(wrapper.html()).to.equal(expectedWrapper.html());
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('build a div representing a row', () => {
       const wrapper = shallow(
           <Row/>
       );
-      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('merge styles passed as argument to component style', () => {
         const wrapper = shallow(
             <Row style={{ backgroundColor: 'green' }}/>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;background-color:green;"></div>');
+        expect(wrapper).toMatchSnapshot();
     });
 
     it('render inside the row the children', () => {
         const wrapper = shallow(
             <Row><p>Row Content</p></Row>
         );
-        expect(wrapper.html()).to.equal('<div style="display:flex;flex-direction:row;flex-wrap:wrap;flex-grow:0;width:100%;"><p>Row Content</p></div>');
+        expect(wrapper).toMatchSnapshot();
     });
 
   describe('material', () => {
@@ -104,34 +101,34 @@ describe('Row', () => {
       const wrapper = shallow(
         <Row striped={true}/>
       );
-      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('does not fail if context.muiTheme is missing', () => {
       const wrapper = shallow(
         <Row material={true}/>
       );
-      expect(wrapper.html()).to.equal(DEFAULT_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('use the material ui theme', () => {
       const wrapper = rowWrapper({material: true});
-      expect(wrapper.html()).to.equal(MATERIAL_UNSTRIPED_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('considers 0 index as pair', () => {
       const wrapper = rowWrapper({material: true, index: 0});
-      expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('add correct style if index is pair and striped is true', () => {
       const wrapper = rowWrapper({index: 2});
-      expect(wrapper.html()).to.equal(MATERIAL_STRIPED_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('add correct style if index is impair and striped is true', () => {
       const wrapper = rowWrapper({index: 3});
-      expect(wrapper.html()).to.equal(MATERIAL_UNSTRIPED_ROW_RESULT);
+      expect(wrapper).toMatchSnapshot();
     });
   });
 });
