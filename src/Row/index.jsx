@@ -49,7 +49,7 @@ Row.getStyles = (props, context) => {
   if (props.material && context.muiTheme) {
     const { tableRow, tableHeader } = context.muiTheme;
     style = Object.assign(style, {
-      borderBottom: props.displayBorder && `1px solid ${tableRow.borderColor}`,
+      borderBottom: `1px solid ${tableRow.borderColor}`,
       color: tableRow.textColor,
     });
     if (props.header) {
