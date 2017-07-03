@@ -55,7 +55,7 @@
   "homepage": "https://jtassin.github.io/react-responsive-table/",
   "devDependencies": {
     "autoprefixer": "^6.7.6",
-    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.23.1",
     "babel-eslint": "7.1.1",
     "babel-jest": "^20.0.3",
