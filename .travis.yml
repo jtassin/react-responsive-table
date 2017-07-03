@@ -1,4 +1,6 @@
 language: node_js
 node_js:
   - "6"
-after_success: yarn coverage
+after_success:
+  - yarn lint
+  - yarn coverage
